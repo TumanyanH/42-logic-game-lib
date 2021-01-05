@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+
+    <script src="./scripts/game-library.js"></script>
+    <script>
+        window.onload = function(){
+
+            new GameConfig({
+                containerId : "container",
+                //config for lvls
+                levels : [
+                    {
+                        matrix : [
+                            [0, 0, 0, 0, 0],
+                            [0, 0, 0, 0, 0],
+                            [1, 1, 1, 1, 1],
+                            [0, 0, 0, 0, 0],
+                            [0, 0, 0, 0, 0],
+                        ],
+                        arrowInitialCoords : [2, 0, 1],
+                        targetCoords : [
+                            [2, 3],
+                            [2, 1],
+                        ],
+                        allowedTools : {
+                            step : 1,
+                            turnRight : 1,
+                            turnLeft : 0,
+                        },
+                        functions : [2, 3, 5],
+                    },
+                    {
+                        matrix : [
+                            [0, 0, 0, 0, 0],
+                            [0, 0, 0, 0, 0],
+                            [1, 1, 1, 1, 1],
+                            [0, 0, 0, 0, 0],
+                            [0, 0, 1, 0, 0],
+                        ],
+                        arrowInitialCoords : [2, 0, 1],
+                        targetCoords : [
+                            [2, 3]
+                        ],
+                        allowedTools : {
+                            step : 1,
+                            turnRight : 1,
+                            turnLeft : 0,
+                        },
+                        functions : [2, 3, 5],
+                    },
+                    {
+                        matrix : [
+                            [0, 0, 1, 0, 0],
+                            [0, 0, 1, 0, 0],
+                            [1, 1, 1, 1, 1],
+                            [0, 0, 1, 0, 0],
+                            [0, 0, 1, 0, 0],
+                        ],
+                        arrowInitialCoords : [2, 0, 1],
+                        targetCoords : [
+                            [2, 3],
+                            [2, 1],
+                        ],
+                        allowedTools : {
+                            step : 1,
+                            turnRight : 1,
+                            turnLeft : 0,
+                        },
+                        functions : [2, 3, 5],
+                    }
+                ]
+            })
+
+        }
+    </script>
+</html>

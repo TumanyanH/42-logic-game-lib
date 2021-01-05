@@ -1,0 +1,181 @@
+#container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-container {
+    width: auto;
+    border: 1px solid lightgrey;
+}
+
+.line {
+    display: flex;
+}
+
+.each-box {
+    width: 40px;
+    height: 40px;
+    background-color: lightgrey;
+    margin: 3px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero-box {
+    background-color: lightgrey;
+}
+
+.one-box {
+    background-color: grey;
+}
+
+.two-box {
+    background-color: green;
+}
+
+.three-box {
+    background-color: red;
+}
+
+.four-box {
+    background-color: blue;
+}
+
+.five-box {
+    background-color: grey;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-bottom: 40px solid black;
+}
+  
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 40px solid black;
+}
+  
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    
+    border-left: 40px solid black;
+}
+  
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+    border-right:40px solid black; 
+}
+
+.target {
+    width : 60%; 
+    height : 60%; 
+    background-color: red; 
+    border-radius : 100%;
+}
+
+.toolbox {
+    border: 1px solid lightgrey;
+    display: flex;
+    width: auto;
+    margin-top: 100px;
+    padding: 5px;
+}
+
+.tool {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 1px solid black;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+}
+
+.functions {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* border : 1px solid lightgrey; */
+    margin-top: 50px;
+}
+
+.function-row {
+    width: auto;
+    display: flex;
+}
+
+.function-slot {
+    width: 40px;
+    height: 40px;
+    margin : 5px;
+    border: 1px solid black;
+}
+
+.function-name-slot {
+    width: 40px;
+    height: 40px;
+    margin : 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 30px;
+    background-color: lawngreen;
+    width: 100px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 7px;
+    color: green;
+    outline: none;
+    cursor: pointer;
+}
+
+.emptySlot {
+    margin-top: 30px;
+    background-color: rgb(247, 194, 194);
+    width: 100px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 7px;
+    color: red;
+    outline: none;
+    cursor: pointer;
+}
