@@ -1,5 +1,5 @@
 (function () {
-    console.log("42 brain test V0.0.1")
+    console.log("42 logic game - alpha V0.0.1")
 })();
 
 class GameConfig {
